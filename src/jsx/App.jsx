@@ -103,7 +103,7 @@ class App extends Component {
         .attr('text-anchor', 'middle')
         .attr('x', '50%')
         .attr('y', '95%')
-        .html(this.state.dates[this.state.year_month_idx].split(' ')[0] + ', ' + this.state.total_cases + ' cases');
+        .html(this.state.dates[this.state.year_month_idx] + ', ' + this.state.total_cases + ' cases');
     });
     setTimeout(() => {
       this.createInterval();
@@ -184,7 +184,7 @@ class App extends Component {
   }
   render() {
     if (this.text) {
-      this.text.html(this.state.dates[this.state.year_month_idx].split(' ')[0] + ', ' + this.state.total_cases + ' cases');
+      this.text.html(this.state.dates[this.state.year_month_idx] + ', ' + this.state.total_cases + ' cases');
     }
     return (
       <div className={style.plus}>

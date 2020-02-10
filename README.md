@@ -2,12 +2,13 @@
 
 **Live demo** https://ebuddj.github.io/2020-korona/
 
-## Project title
+## Korona virus spread in Europe
 
 **Sources**
 * [THL](https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/wuhanin-koronavirus)
 * [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/)
 * [ECDC](https://www.ecdc.europa.eu/en/novel-coronavirus-china)
+* [JHU CCSE](https://github.com/CSSEGISandData/2019-nCoV)
 
 ## How to use
 
