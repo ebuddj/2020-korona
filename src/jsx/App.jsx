@@ -19,7 +19,7 @@ import './../styles/rc-slider-override.css';
 import * as d3 from 'd3';
 
 let interval, g, path;
-const projection = d3.geoAzimuthalEquidistant().center([18,63]).scale(1150);
+const projection = d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
 
 class App extends Component {
   constructor(props) {
@@ -49,8 +49,8 @@ class App extends Component {
     });
   }
   drawMap() {
-    let width = window.innerHeight;
-    let height = window.innerHeight;
+    let width = 720;
+    let height = 720;
     
     let svg = d3.select('.' + style.map_container).append('svg').attr('width', width).attr('height', height);
     path = d3.geoPath().projection(projection);
@@ -106,7 +106,7 @@ class App extends Component {
         .attr('text-anchor', 'middle')
         .attr('x', '50%')
         .attr('y', '95%')
-        .html(date[1] + '.' + date[0] + '.' + date[2] + '20, 0 cases in total');
+        .html('By ' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 cases in total');
     });
     setTimeout(() => {
       this.createInterval();
@@ -190,7 +190,7 @@ class App extends Component {
       let datetime = this.state.dates[this.state.year_month_idx].split(' ');
       let date = datetime[0].split('/');
       let time = datetime[1];
-      this.text.html(date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' cases in total');
+      this.text.html('By ' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' cases in total');
     }
     return (
       <div className={style.plus}>
