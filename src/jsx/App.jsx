@@ -165,6 +165,7 @@ class App extends Component {
     clearInterval(interval);
   }
   createInterval() {
+    this.changeCountryAttributes();
     interval = setInterval(() => {
       this.setState((state, props) => ({
         total_cases:0,
