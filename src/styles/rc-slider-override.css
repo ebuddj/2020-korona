@@ -1,12 +1,12 @@
 .rc-slider-track {
-  background-color: #f00;
+  background-color: #FF5233;
 }
 .rc-slider-rail {
   background-color: #4c4c39;
 }
 .rc-slider-handle {
-  background-color: #2e3441;
-  border-color: #2e3441;
+  background-color: #000;
+  border-color: #000;
 }
 .rc-slider-handle:focus,
 .rc-slider-handle:hover,
