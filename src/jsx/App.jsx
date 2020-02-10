@@ -112,7 +112,7 @@ class App extends Component {
       this.createInterval();
     }, 3000);
   }
-  changeCountryAttributes(type) {
+  changeCountryAttributes() {
     // Change fill color.
     g.selectAll('path')
       .attr('fill', (d, i) => {
