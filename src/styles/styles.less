@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500.css');
+
+body {
+  margin:auto auto;
+  padding:0;
+}
+.plus {
+  max-width: 100%;
+  h3 {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 500;
+    margin: auto auto 10px auto;
+    text-align: center;
+  }
+  h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin: 0 auto 5px auto;
+  }
+  p {
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0 auto 0 auto;
+  }
+  a {
+    color: #000;
+  }
+
+  // Slider.
+  .slider_container {
+    position: absolute;
+    margin: auto auto auto auto;
+  }
+
+  // Map.
+  .map_container {
+    margin: auto auto;
+    svg {
+      display: block;
+      margin: auto auto;
+      .path {
+        stroke-width: 0.5px;
+        stroke: #999;
+        transition: fill 0.2s linear;
+      }
+      .number,
+      .circle {
+        transition: all 0.5s linear;
+      }
+      .text {
+        font-family: 'Roboto';
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+      }
+      .number {
+        color: #999;
+        font-family: 'Roboto';
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+      }
+    }
+  }
+
+  // Line chart
+  .line_chart_container {
+    margin: auto auto;
+  }
+  @import 'basics.less';
+}
