@@ -5,6 +5,7 @@ body {
 }
 .plus___DWTpR {
   max-width: 700px;
+  position: relative;
   margin: auto auto;
   /* General styles */
 }
@@ -30,6 +31,7 @@ body {
   color: #000;
 }
 .plus___DWTpR .slider_container___35Luy {
+  position: absolute;
   text-align: center;
   margin: 20px auto auto auto;
 }
