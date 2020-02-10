@@ -97,13 +97,16 @@ class App extends Component {
           return projection([d.Long, d.Lat])[1] + 1;
         })
         .html('')
+      let datetime = this.state.dates[this.state.year_month_idx].split(' ');
+      let date = datetime[0].split('/');
+      let time = datetime[1];
       this.text = svg.append('text')
         .attr('alignment-baseline', 'top')
         .attr('class', style.text)
         .attr('text-anchor', 'middle')
         .attr('x', '50%')
         .attr('y', '95%')
-        .html(this.state.dates[this.state.year_month_idx] + ', ' + this.state.total_cases + ' cases');
+        .html(date[1] + '.' + date[0] + '.' + date[2] + '20, 0 cases in total');
     });
     setTimeout(() => {
       this.createInterval();
@@ -124,7 +127,7 @@ class App extends Component {
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) * 20;
+        return parseInt(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) * 20) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
@@ -184,7 +187,10 @@ class App extends Component {
   }
   render() {
     if (this.text) {
-      this.text.html(this.state.dates[this.state.year_month_idx] + ', ' + this.state.total_cases + ' cases');
+      let datetime = this.state.dates[this.state.year_month_idx].split(' ');
+      let date = datetime[0].split('/');
+      let time = datetime[1];
+      this.text.html(date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' cases in total');
     }
     return (
       <div className={style.plus}>
