@@ -8,12 +8,16 @@ The map shows the number of confirmed cases of nCoV in Europe from January 20th 
 
 **Links**
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/8c3fa449db25f73b3bb1c502d7ae8566/2020_21006664)
+* [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/)
 
 **Sources**
 * [THL](https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/wuhanin-koronavirus)
 * [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/)
 * [ECDC](https://www.ecdc.europa.eu/en/novel-coronavirus-china)
 * [JHU CCSE](https://github.com/CSSEGISandData/2019-nCoV)
+
+**Used by**
+** [Euronews/Italy on Instagram](https://www.instagram.com/p/B8a27sJD3bN/)
 
 ## How to use
 
