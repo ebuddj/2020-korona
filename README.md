@@ -1,10 +1,18 @@
-# 2020-korona
+# 2020-corona
 
-**Live demo** https://ebuddj.github.io/2020-korona/
+**Live demo** https://ebuddj.github.io/2020-corona/
 
 ## Confirmed coronavirus cases in Europe countries (EBU)
 
-The map shows the number of confirmed cases of nCoV in Europe from January 20th until February 9th included. The first confirmed cases appeared on the January 25th report, even though they were already known on January 24th. The size of the circle represents the number of confirmed cases per country. NCoV cases in Russia are shown on this visualization.
+Concerns about the new coronavirus linger over Europe as the UK declared a “serious and imminent threat” to public health on Monday morning. The step allows extra measures, such as enforcing quarantine, to be taken by doctors to fight the spread of the disease, and was announced along with four new cases bringing the total number of cases to eight in the UK.
+
+Meanwhile, the EU has scheduled a special meeting of health ministers. Issues on the agenda are the possibility of coordinating border controls, shortages of medicine due to production disruptions in China, and the stepping up of efforts to develop a vaccination against the disease.
+
+This map shows the number of confirmed cases of the novel coronavirus (nCoV) in Europe from January 20 until February 9 included. The first confirmed case was reported on January 25, although it had already been known about since the previous day.
+
+The data has been sourced from the World Health Organisation and was compiled by the Johns Hopkins University Center for Systems Science and Engineering. See, [here](https://github.com/CSSEGISandData/COVID-19).
+
+More information about WHO situation reports can be accessed, [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/).
 
 **Links**
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/8c3fa449db25f73b3bb1c502d7ae8566/2020_21006664)
@@ -14,10 +22,10 @@ The map shows the number of confirmed cases of nCoV in Europe from January 20th 
 * [THL](https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/wuhanin-koronavirus)
 * [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/)
 * [ECDC](https://www.ecdc.europa.eu/en/novel-coronavirus-china)
-* [JHU CCSE](https://github.com/CSSEGISandData/2019-nCoV)
+* [JHU CCSE](https://github.com/CSSEGISandData/COVID-19)
 
 **Used by**
-** [Euronews/Italy on Instagram](https://www.instagram.com/p/B8a27sJD3bN/)
+* [Euronews/Italy on Instagram](https://www.instagram.com/p/B8a27sJD3bN/)
 
 ## How to use
 
