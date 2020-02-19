@@ -8,7 +8,7 @@ Concerns about the new coronavirus linger over Europe as the UK declared a “se
 
 Meanwhile, the EU has scheduled a special meeting of health ministers. Issues on the agenda are the possibility of coordinating border controls, shortages of medicine due to production disruptions in China, and the stepping up of efforts to develop a vaccination against the disease.
 
-This map shows the number of confirmed cases of the novel coronavirus (nCoV) in Europe from January 20 until February 9 included. The first confirmed case was reported on January 25, although it had already been known about since the previous day.
+This map shows the number of confirmed cases of the novel coronavirus (nCoV) in Europe from January 22 until February 22 included.
 
 The data has been sourced from the World Health Organisation and was compiled by the Johns Hopkins University Center for Systems Science and Engineering. See, [here](https://github.com/CSSEGISandData/COVID-19).
 
