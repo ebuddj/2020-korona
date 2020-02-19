@@ -23,6 +23,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/)
 * [ECDC](https://www.ecdc.europa.eu/en/novel-coronavirus-china)
 * [JHU CCSE](https://github.com/CSSEGISandData/COVID-19)
+* [GPS Coordinates](https://www.gps-coordinates.net/)
 
 **Used by**
 * [Euronews/Italy on Instagram](https://www.instagram.com/p/B8a27sJD3bN/)

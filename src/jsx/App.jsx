@@ -39,7 +39,7 @@ class App extends Component {
       this.setState((state, props) => ({
         data:response.data,
         dates: _.keys(response.data['Finland']).filter((value, index, arr) => {
-          return !(value === 'Continent' || value === 'Province/State' || value === 'Lat' || value === 'Long' || value === '1/24/20 12:00' || value === '1/25/20 0:00' || value === '1/25/20 12:00' || value === '1/26/20 11:00' || value === '1/27/20 9:00' || value === '1/27/20 19:00' || value === '1/28/20 13:00' || value === '1/28/20 18:00' || value === '1/29/20 13:30' || value === '1/29/20 14:30' || value === '2/4/20 9:40' || value === '2/5/20 9:00' || value === '2/6/20 9:00' || value === '2/7/20 20:13' || value === '2/8/20 22:04' || value === '2/9/20 10:30');
+          return !(value === 'Continent' || value === 'Province/State' || value === 'Lat' || value === 'Long');
         })
       }), this.drawMap);
     })
@@ -97,9 +97,7 @@ class App extends Component {
           return projection([d.Long, d.Lat])[1] + 1;
         })
         .html('')
-      let datetime = this.state.dates[this.state.year_month_idx].split(' ');
-      let date = datetime[0].split('/');
-      let time = datetime[1];
+      let date = this.state.dates[this.state.year_month_idx].split('/');
       this.text = svg.append('text')
         .attr('alignment-baseline', 'top')
         .attr('class', style.text)
