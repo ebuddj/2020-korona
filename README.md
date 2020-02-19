@@ -15,8 +15,10 @@ The data has been sourced from the World Health Organisation and was compiled by
 More information about WHO situation reports can be accessed, [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/).
 
 **Links**
-* [News Exchange](https://news-exchange.ebu.ch/item_detail/8c3fa449db25f73b3bb1c502d7ae8566/2020_21006664)
-* [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/)
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/8c3fa449db25f73b3bb1c502d7ae8566/2020_21006664), 2020-02-09
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/da087ac05145afd42c72e155c3861b86/2020_21008248), 2020-02-19
+* [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/), 2020-02-09
+* [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-show-spread-of-coronavirus-throughout-europe-animation/), 2020-02-19
 
 **Sources**
 * [THL](https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/wuhanin-koronavirus)
