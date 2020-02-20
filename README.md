@@ -29,6 +29,10 @@ More information about WHO situation reports can be accessed, [here](https://www
 
 **Used by**
 * [Euronews/Italy on Instagram](https://www.instagram.com/p/B8a27sJD3bN/)
+* AT/ORF on ORF2 Bundesland
+* DE/ZDF on 3SAT
+* GB/BBC on BBC News
+* GB/BBC on BBC World News
 
 ## How to use
 
