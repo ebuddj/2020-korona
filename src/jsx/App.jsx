@@ -118,7 +118,7 @@ class App extends Component {
         .attr('text-anchor', 'middle')
         .attr('x', '50%')
         .attr('y', '95%')
-        .html('By ' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 confirmed');
+        .html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 confirmed');
     });
     setTimeout(() => {
       this.createInterval();
@@ -202,7 +202,7 @@ class App extends Component {
       let datetime = this.state.dates[this.state.year_month_idx].split(' ');
       let date = datetime[0].split('/');
       let time = datetime[1];
-      this.text.html('By ' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' confirmed');
+      this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' confirmed');
     }
     return (
       <div className={style.plus}>
