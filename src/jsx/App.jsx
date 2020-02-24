@@ -21,6 +21,7 @@ import * as d3 from 'd3';
 let interval, g, path;
 const projection = d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
 
+// https://www.gps-coordinates.net/
 const countyCenters = {
   "France": {"Lat":46.603354, "Long":1.8883335},
   "Germany": {"Lat":51.0834196, "Long":10.4234469},
