@@ -96,7 +96,7 @@ class App extends Component {
           return 0;
         })
         .attr('class', style.circle)
-        .style('fill', '#FF5233');
+        .style('fill', 'rgba(255, 82, 51, 0.75)');
 
       g.selectAll('text').data(Object.keys(this.state.confirmed).map(i => this.state.confirmed[i]))
         .enter()
