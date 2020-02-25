@@ -30,6 +30,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * DE/ZDF on 3SAT
 * GB/BBC on BBC News
 * GB/BBC on BBC World News
+* XK/RTK on RTK 1
 
 ## How to use
 
