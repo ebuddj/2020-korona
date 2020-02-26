@@ -22,17 +22,35 @@ let interval, g, path;
 const projection = d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
 
 // https://www.gps-coordinates.net/
-const countyCenters = {
+const countryCenters = {
+  "Austria": {"Lat":47.2000338, "Long":13.199959},
+  "Belgium": {"Lat":50.6402809, "Long":4.6667145},
+  "Croatia": {"Lat":45.5643442, "Long":17.0118954},
+  "Finland": {"Lat":63.2467777, "Long":25.9209164},
   "France": {"Lat":46.603354, "Long":1.8883335},
   "Germany": {"Lat":51.0834196, "Long":10.4234469},
-  "Finland": {"Lat":63.2467777, "Long":25.9209164},
   "Italy": {"Lat":42.6384261, "Long":12.674297},
-  "United Kingdom": {"Lat":54.7023545, "Long":-3.2765753},
   "Russia": {"Lat":55.76158905029297, "Long":37.609458923339844},
-  "Sweden": {"Lat":59.6749712, "Long":14.5208584},
   "Spain": {"Lat":39.3262345, "Long":-4.8380649},
-  "Belgium": {"Lat":50.6402809, "Long":4.6667145}
-} 
+  "Sweden": {"Lat":59.6749712, "Long":14.5208584},
+  "Switzerland": {"Lat":46.7985624, "Long":8.2319736},
+  "United Kingdom": {"Lat":54.7023545, "Long":-3.2765753}
+}
+const languages = {
+  'en': {
+    confirmed:'confirmed'
+  },
+  'sv':{
+    confirmed:'bekräftade'
+  }
+}
+
+function getHashValue(key) {
+  let matches = location.hash.match(new RegExp(key+'=([^&]*)'));
+  return matches ? matches[1] : null;
+}
+const l = getHashValue('l') ? getHashValue('l') : 'en';
+
 
 class App extends Component {
   constructor(props) {
@@ -88,10 +106,10 @@ class App extends Component {
         .enter()
         .append('circle')
         .attr('cx', (d, i) => {
-          return projection([countyCenters[d.Country].Long, countyCenters[d.Country].Lat])[0];
+          return projection([countryCenters[d.Country].Long, countryCenters[d.Country].Lat])[0];
         })
         .attr('cy', (d, i) => {
-          return projection([countyCenters[d.Country].Long, countyCenters[d.Country].Lat])[1];
+          return projection([countryCenters[d.Country].Long, countryCenters[d.Country].Lat])[1];
         })
         .attr('r', (d, i) => {
           return 0;
@@ -106,10 +124,10 @@ class App extends Component {
         .attr('alignment-baseline', 'central')
         .attr('class', style.number)
         .attr('x', (d, i) => {
-          return projection([countyCenters[d.Country].Long, countyCenters[d.Country].Lat])[0] + 0.3;
+          return projection([countryCenters[d.Country].Long, countryCenters[d.Country].Lat])[0] + 0.3;
         })
         .attr('y', (d, i) => {
-          return projection([countyCenters[d.Country].Long, countyCenters[d.Country].Lat])[1] + 1;
+          return projection([countryCenters[d.Country].Long, countryCenters[d.Country].Lat])[1] + 1;
         })
         .html('')
       let date = this.state.dates[this.state.year_month_idx].split('/');
@@ -119,7 +137,7 @@ class App extends Component {
         .attr('text-anchor', 'middle')
         .attr('x', '50%')
         .attr('y', '95%')
-        .html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 confirmed');
+        .html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 ' + languages[l].confirmed);
     });
     setTimeout(() => {
       this.createInterval();
@@ -136,11 +154,11 @@ class App extends Component {
         this.setState((state, props) => ({
           total_cases:state.total_cases + d[this.state.dates[this.state.year_month_idx]]
         }));
-        return Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) * 12;
+        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 15;
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return parseInt(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) * 12) + 'px';
+        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 15) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
@@ -200,10 +218,12 @@ class App extends Component {
   }
   render() {
     if (this.text) {
-      let datetime = this.state.dates[this.state.year_month_idx].split(' ');
-      let date = datetime[0].split('/');
-      let time = datetime[1];
-      this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' confirmed');
+      if (this.state.dates[this.state.year_month_idx]) {
+        let datetime = this.state.dates[this.state.year_month_idx].split(' ');
+        let date = datetime[0].split('/');
+        let time = datetime[1];
+        this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' ' + languages[l].confirmed);
+      }
     }
     return (
       <div className={style.plus}>
