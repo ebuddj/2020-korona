@@ -4,11 +4,11 @@
 
 ## Confirmed coronavirus cases in Europe countries (EBU)
 
-This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from January 22 until February 25 included.
+This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from January 22 until February 27 included.
 
 The data has been sourced from the World Health Organisation and was compiled by the Johns Hopkins University Center for Systems Science and Engineering. See, [here](https://github.com/CSSEGISandData/COVID-19).
 
-Swedish demo available: https://ebuddj.github.io/2020-corona/#l=sv
+**Swedish version:** https://ebuddj.github.io/2020-corona/#l=sv
 
 More information about WHO situation reports can be accessed, [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/).
 

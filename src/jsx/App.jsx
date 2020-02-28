@@ -30,7 +30,7 @@ const countryCenters = {
   "Estonia": {"Lat":58.7523778, "Long":25.3319078},
   "Finland": {"Lat":63.2467777, "Long":25.9209164},
   "France": {"Lat":46.603354, "Long":1.8883335},
-  "Georgia": {"Lat":41.6809707, "Long":44.0287382},
+  "Georgia": {"Lat":42, "Long":44.0287382},
   "Germany": {"Lat":51.0834196, "Long":10.4234469},
   "Greece": {"Lat":38.9953683, "Long":21.9877132},
   "Italy": {"Lat":42.6384261, "Long":12.674297},
