@@ -31,17 +31,18 @@ More information about WHO situation reports can be accessed, [here](https://www
 **Used by**
 * [Euronews/Italy on Instagram](https://www.instagram.com/p/B8a27sJD3bN/)
 * [Yle/Finland on Stream](https://arenan.yle.fi/1-50460781)
-* PTV/Armenia on 1TV
-* ORF/Austria on ORF2 Bundesland
-* CT/Czech on CT1 Czech
-* CT/Czech on CT24
 * ARD/Germany on MDR
-* ZDF/Germany on 3SAT
 * BBC/United Kingdom on BBC News
 * BBC/United Kingdom on BBC World News
+* CT/Czech on CT1 Czech
+* CT/Czech on CT24
+* ORF/Austria on ORF2 Bundesland
+* PTV/Armenia on 1TV
 * RAI/Italy on RAI 3
 * RTCG/Montenegro on TVCG Sat
 * RTK/Kosovo on RTK 1
+* TRV/Romania on TVR 1
+* ZDF/Germany on 3SAT
 
 ## How to use
 
