@@ -17,6 +17,9 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/da087ac05145afd42c72e155c3861b86/2020_21008248), 2020-02-19
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/10a5aa8de6dcf3c367619daea6972d8f/2020_21008984), 2020-02-24
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/cac28647da00aa8cd45b2cf3289e3336/2020_21009436), 2020-02-26
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/cac28647da00aa8cd45b2cf3289e3336/2020_21009436), 2020-02-26
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/cac28647da00aa8cd45b2cf3289e3336/2020_21009845), 2020-02-28
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/ce49242f1b7dee332304bb8a5e08bf75/2020_21010402), 2020-03-02
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/), 2020-02-09
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-show-spread-of-coronavirus-throughout-europe-animation/), 2020-02-19
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-shows-spread-of-coronavirus-throughout-europe-between-january-20-and-february-25-animation/), 2020-02-26
@@ -41,6 +44,8 @@ More information about WHO situation reports can be accessed, [here](https://www
 * RAI/Italy on RAI 3
 * RTCG/Montenegro on TVCG Sat
 * RTK/Kosovo on RTK 1
+* RTVS/Slovakia on Dvojka
+* RTVS/Slovakia on Jednotka
 * TRV/Romania on TVR 1
 * ZDF/Germany on 3SAT
 
