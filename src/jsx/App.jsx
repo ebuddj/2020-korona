@@ -40,6 +40,7 @@ const countryCenters = {
   "Iceland": {"Lat":64.9841821, "Long":-18.1059013},
   "Ireland": {"Lat":52.865196, "Long":-7.9794599},
   "Italy": {"Lat":42.6384261, "Long":12.674297},
+  "Latvia": {"Lat":56.8406494, "Long":24.7537645},
   "Lithuania": {"Lat":55.3500003, "Long":23.7499997},
   "Luxembourg": {"Lat":49.8158683, "Long":6.1296751},
   "Monaco": {"Lat":43.7384402, "Long":7.4242474},
@@ -52,6 +53,7 @@ const countryCenters = {
   "Spain": {"Lat":40, "Long":-3.25},
   "Sweden": {"Lat":59.6749712, "Long":14.5208584},
   "Switzerland": {"Lat":46.7985624, "Long":8.2319736},
+  "Ukraine": {"Lat":49.4871968, "Long":31.2718321},
   "United Kingdom": {"Lat":54.7023545, "Long":-3.2765753}
 }
 const languages = {
@@ -172,11 +174,11 @@ class App extends Component {
         this.setState((state, props) => ({
           total_cases:state.total_cases + d[this.state.dates[this.state.year_month_idx]]
         }));
-        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 10;
+        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 8;
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 10) + 'px';
+        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 8) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
