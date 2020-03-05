@@ -23,6 +23,7 @@ const projection = d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
 
 // https://www.gps-coordinates.net/
 const countryCenters = {
+  "Andorra": {"Lat":42.5407167, "Long":1.5732033},
   "Armenia": {"Lat":40.7696272, "Long":44.6736646},
   "Austria": {"Lat":47.2000338, "Long":13.199959},
   "Azerbaijan": {"Lat":40.3936294, "Long":47.7872508},
@@ -32,21 +33,27 @@ const countryCenters = {
   "Czech Republic": {"Lat":49.8167003, "Long":15.4749544},
   "Denmark": {"Lat":55.670249, "Long":10.3333283},
   "Estonia": {"Lat":58.7523778, "Long":25.3319078},
+  "Faroe Islands": {"Lat":62.1985004, "Long":-6.8174124},
   "Finland": {"Lat":63.2467777, "Long":25.9209164},
   "France": {"Lat":46.603354, "Long":1.8883335},
   "Georgia": {"Lat":42, "Long":44.0287382},
   "Germany": {"Lat":51.0834196, "Long":10.4234469},
   "Greece": {"Lat":38.9953683, "Long":21.9877132},
+  "Gibraltar": {"Lat":36.106747, "Long":-5.3352772},
+  "Hungary": {"Lat":47.1817585, "Long":19.5060937},
   "Iceland": {"Lat":64.9841821, "Long":-18.1059013},
   "Ireland": {"Lat":52.865196, "Long":-7.9794599},
   "Italy": {"Lat":42.6384261, "Long":12.674297},
   "Latvia": {"Lat":56.8406494, "Long":24.7537645},
+  "Liechtenstein": {"Lat":47.1416307, "Long":9.5531527},
   "Lithuania": {"Lat":55.3500003, "Long":23.7499997},
   "Luxembourg": {"Lat":49.8158683, "Long":6.1296751},
   "Monaco": {"Lat":43.7384402, "Long":7.4242474},
   "Netherlands": {"Lat":52.5001698, "Long":5.7480821},
   "North Macedonia": {"Lat":41.512351989746094, "Long":21.751619338989258},
   "Norway": {"Lat":60.5000209, "Long":9.0999715},
+  "Poland": {"Lat":52.215933, "Long":19.134422},
+  "Portugal": {"Lat":40.0332629, "Long":-7.8896263},
   "Romania": {"Lat":45.9852129, "Long":24.6859225},
   "Russia": {"Lat":55.76158905029297, "Long":37.609458923339844},
   "San Marino": {"Lat":43.9458623, "Long":12.458306},
@@ -85,6 +92,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
+    // https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv
     axios.get('./data/data.json', {
     })
     .then((response) => {
