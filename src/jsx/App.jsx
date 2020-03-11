@@ -23,12 +23,15 @@ const projection = d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
 
 // https://www.gps-coordinates.net/
 const countryCenters = {
+  "Albania": {"Lat":41.000028, "Long":19.9999619},
   "Andorra": {"Lat":42.5407167, "Long":1.5732033},
   "Armenia": {"Lat":40.7696272, "Long":44.6736646},
   "Austria": {"Lat":47.2000338, "Long":13.199959},
   "Azerbaijan": {"Lat":40.3936294, "Long":47.7872508},
   "Belarus": {"Lat":53.4250605, "Long":27.6971358},
   "Belgium": {"Lat":50.6402809, "Long":4.6667145},
+  "Channel Islands": {"Lat":49.34659957885742, "Long":-2.362060546875},
+  "Cyprus": {"Lat":34.9823018, "Long":33.1451285},
   "Croatia": {"Lat":45.5643442, "Long":17.0118954},
   "Czech Republic": {"Lat":49.8167003, "Long":15.4749544},
   "Denmark": {"Lat":55.670249, "Long":10.3333283},
@@ -108,7 +111,7 @@ class App extends Component {
       this.setState((state, props) => ({
         confirmed:response.data.confirmed,
         deaths:response.data.deaths,
-        dates: _.keys(response.data.confirmed['Finland']).filter((value, index, arr) => {
+        dates:_.keys(response.data.confirmed['Finland']).filter((value, index, arr) => {
           return !(value === 'Country' || value === 'Continent' || value === 'Province/State' || value === 'Lat' || value === 'Long');
         })
       }), this.drawMap);
@@ -143,6 +146,7 @@ class App extends Component {
         .enter()
         .append('circle')
         .attr('cx', (d, i) => {
+          console.log(d.Country)
           return projection([countryCenters[d.Country].Long, countryCenters[d.Country].Lat])[0];
         })
         .attr('cy', (d, i) => {
