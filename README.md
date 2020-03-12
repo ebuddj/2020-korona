@@ -21,6 +21,8 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/cac28647da00aa8cd45b2cf3289e3336/2020_21009845), 2020-02-28
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/ce49242f1b7dee332304bb8a5e08bf75/2020_21010402), 2020-03-02
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9835d15e3209836e0f694a667f871ee6/2020_21010961), 2020-03-05
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/9835d15e3209836e0f694a667f871ee6/2020_21011649), 2020-03-09
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/a34eb8c8262bb020bcd2dcfa6b48bed9/2020_21012113), 2020-03-11
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/), 2020-02-09
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-show-spread-of-coronavirus-throughout-europe-animation/), 2020-02-19
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-shows-spread-of-coronavirus-throughout-europe-between-january-20-and-february-25-animation/), 2020-02-26
@@ -41,6 +43,10 @@ More information about WHO situation reports can be accessed, [here](https://www
 * BBC/United Kingdom on BBC World News
 * CT/Czech on CT1 Czech
 * CT/Czech on CT24
+* Euronews/English on Euronews English
+* Euronews/French on Euronews French
+* Euronews/Germany on Euronews Germany
+* Euronews/Italy on Euronews Italy
 * ORF/Austria on ORF2 Bundesland
 * PTV/Armenia on 1TV
 * RAI/Italy on RAI 3
@@ -49,6 +55,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * RTVS/Slovakia on Dvojka
 * RTVS/Slovakia on Jednotka
 * TRV/Romania on TVR 1
+* TVS/Slovenia on TVS1 Slovenia
 * ZDF/Germany on 3SAT
 
 ## How to use
