@@ -33,7 +33,7 @@ const countryCenters = {
   "Channel Islands": {"Lat":49.34659957885742, "Long":-2.362060546875},
   "Cyprus": {"Lat":34.9823018, "Long":33.1451285},
   "Croatia": {"Lat":45.5643442, "Long":17.0118954},
-  "Czech Republic": {"Lat":49.8167003, "Long":15.4749544},
+  "Czechia": {"Lat":49.8167003, "Long":15.4749544},
   "Denmark": {"Lat":55.670249, "Long":10.3333283},
   "Estonia": {"Lat":58.7523778, "Long":25.3319078},
   "Faroe Islands": {"Lat":62.1985004, "Long":-6.8174124},
@@ -73,6 +73,7 @@ const countryCenters = {
   "Serbia": {"Lat":44.0243228, "Long":21.0765743},
   "Slovenia": {"Lat":45.8133113, "Long":14.4808369},
   "Bosnia and Herzegovina": {"Lat":44.3053476, "Long":17.5961467},
+  "Turkey": {"Lat":38.9597594, "Long":34.9249653},
   "United Kingdom": {"Lat":54.7023545, "Long":-3.2765753}
 }
 const languages = {
@@ -146,7 +147,6 @@ class App extends Component {
         .enter()
         .append('circle')
         .attr('cx', (d, i) => {
-          console.log(d.Country)
           return projection([countryCenters[d.Country].Long, countryCenters[d.Country].Lat])[0];
         })
         .attr('cy', (d, i) => {
@@ -195,11 +195,11 @@ class App extends Component {
         this.setState((state, props) => ({
           total_cases:state.total_cases + d[this.state.dates[this.state.year_month_idx]]
         }));
-        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 6.5;
+        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 6;
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 6.5) + 'px';
+        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 6) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
