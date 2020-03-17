@@ -54,6 +54,7 @@ const countryCenters = {
   "Monaco": {"Lat":43.7384402, "Long":7.4242474},
   "Netherlands": {"Lat":52.5001698, "Long":5.7480821},
   "North Macedonia": {"Lat":41.512351989746094, "Long":21.751619338989258},
+  "Jersey": {"Lat":49.2123066, "Long":-2.1256},
   "Norway": {"Lat":60.5000209, "Long":9.0999715},
   "Poland": {"Lat":52.215933, "Long":19.134422},
   "Portugal": {"Lat":40.0332629, "Long":-7.8896263},
@@ -61,6 +62,7 @@ const countryCenters = {
   "Russia": {"Lat":55.76158905029297, "Long":37.609458923339844},
   "San Marino": {"Lat":43.9458623, "Long":12.458306},
   "Spain": {"Lat":40, "Long":-3.25},
+  "Kosovo": {"Lat":42.5869578, "Long":20.9021231},
   "Sweden": {"Lat":59.6749712, "Long":14.5208584},
   "Switzerland": {"Lat":46.7985624, "Long":8.2319736},
   "Ukraine": {"Lat":49.4871968, "Long":31.2718321},
@@ -68,7 +70,7 @@ const countryCenters = {
   "Bulgaria": {"Lat":42.6073975, "Long":25.4856617},
   "Ireland": {"Lat":52.865196, "Long":-7.9794599},
   "Malta": {"Lat":35.8885993, "Long":14.4476911},
-  "Vatican City": {"Lat":41.9038149, "Long":12.4531527},
+  "Holy See": {"Lat":41.9038149, "Long":12.4531527},
   "Slovakia": {"Lat":48.7411522, "Long":19.4528646},
   "Serbia": {"Lat":44.0243228, "Long":21.0765743},
   "Slovenia": {"Lat":45.8133113, "Long":14.4808369},
@@ -195,11 +197,11 @@ class App extends Component {
         this.setState((state, props) => ({
           total_cases:state.total_cases + d[this.state.dates[this.state.year_month_idx]]
         }));
-        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 6;
+        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 5;
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 6) + 'px';
+        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 5) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {

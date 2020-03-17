@@ -4,7 +4,7 @@
 
 ## Confirmed coronavirus cases in Europe countries (EBU)
 
-This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from January 22 until March 12 included.
+This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from January 22 until March 16 included.
 
 The data has been sourced from the World Health Organisation and was compiled by the Johns Hopkins University Center for Systems Science and Engineering. See, [here](https://github.com/CSSEGISandData/COVID-19).
 
@@ -23,10 +23,13 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9835d15e3209836e0f694a667f871ee6/2020_21010961), 2020-03-05
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9835d15e3209836e0f694a667f871ee6/2020_21011649), 2020-03-09
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/a34eb8c8262bb020bcd2dcfa6b48bed9/2020_21012113), 2020-03-11
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/a34eb8c8262bb020bcd2dcfa6b48bed9/2020_21012113), 2020-03-11
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/6c445577676afd692a08a082e7f50310/2020_21012568), 2020-03-13
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/), 2020-02-09
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-show-spread-of-coronavirus-throughout-europe-animation/), 2020-02-19
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-shows-spread-of-coronavirus-throughout-europe-between-january-20-and-february-25-animation/), 2020-02-26
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-shows-coronavirus-spread-in-europe-through-march-4-animation/), 2020-03-05
+* [Social Newswire](https://www.evnsocialnewswire.ch/data/coronavirus-animations-showing-number-of-confirmed-covid-19-cases-in-europe-from-january-22nd-to-march-12th-animation/), 2020-03-13
 
 **Sources**
 * [THL](https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/wuhanin-koronavirus)
@@ -52,6 +55,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * RAI/Italy on RAI 3
 * RTCG/Montenegro on TVCG Sat
 * RTK/Kosovo on RTK 1
+* RTP/Portugal on RTPI
 * RTVS/Slovakia on Dvojka
 * RTVS/Slovakia on Jednotka
 * TRV/Romania on TVR 1
