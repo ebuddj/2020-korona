@@ -59,8 +59,8 @@ More information about WHO situation reports can be accessed, [here](https://www
 * RTP/Portugal on RTPI
 * RTVS/Slovakia on Dvojka
 * RTVS/Slovakia on Jednotka
+* RTVS/Slovenia on TVS1 Slovenia
 * TRV/Romania on TVR 1
-* TVS/Slovenia on TVS1 Slovenia
 * ZDF/Germany on 3SAT
 
 ## How to use
