@@ -52,6 +52,7 @@ const countryCenters = {
   "Lithuania": {"Lat":55.3500003, "Long":23.7499997},
   "Luxembourg": {"Lat":49.8158683, "Long":6.1296751},
   "Monaco": {"Lat":43.7384402, "Long":7.4242474},
+  "Montenegro": {"Lat":42.9868853, "Long":19.5180992},
   "Netherlands": {"Lat":52.5001698, "Long":5.7480821},
   "North Macedonia": {"Lat":41.512351989746094, "Long":21.751619338989258},
   "Jersey": {"Lat":49.2123066, "Long":-2.1256},
@@ -80,7 +81,8 @@ const countryCenters = {
 }
 const languages = {
   'en': {
-    confirmed:'confirmed'
+    confirmed:'confirmed',
+    deaths:'deaths'
   },
   'sv':{
     confirmed:'bekräftade'
@@ -91,8 +93,11 @@ function getHashValue(key) {
   let matches = location.hash.match(new RegExp(key+'=([^&]*)'));
   return matches ? matches[1] : null;
 }
-const l = getHashValue('l') ? getHashValue('l') : 'en';
 
+const l = getHashValue('l') ? getHashValue('l') : 'en';
+const type = getHashValue('type') ? getHashValue('type') : 'confirmed';
+
+const multiplier = (type === 'confirmed') ? 5 : 9; 
 
 class App extends Component {
   constructor(props) {
@@ -114,7 +119,7 @@ class App extends Component {
       this.setState((state, props) => ({
         confirmed:response.data.confirmed,
         deaths:response.data.deaths,
-        dates:_.keys(response.data.confirmed['Finland']).filter((value, index, arr) => {
+        dates:_.keys(response.data[type]['Finland']).filter((value, index, arr) => {
           return !(value === 'Country' || value === 'Continent' || value === 'Province/State' || value === 'Lat' || value === 'Long');
         })
       }), this.drawMap);
@@ -145,7 +150,7 @@ class App extends Component {
           return this.getCountryColor(d.properties.NAME);
         });
 
-      g.selectAll('circle').data(Object.keys(this.state.confirmed).map(i => this.state.confirmed[i]))
+      g.selectAll('circle').data(Object.keys(this.state[type]).map(i => this.state[type][i]))
         .enter()
         .append('circle')
         .attr('cx', (d, i) => {
@@ -160,7 +165,7 @@ class App extends Component {
         .attr('class', style.circle)
         .style('fill', 'rgba(255, 82, 51, 0.75)');
 
-      g.selectAll('text').data(Object.keys(this.state.confirmed).map(i => this.state.confirmed[i]))
+      g.selectAll('text').data(Object.keys(this.state[type]).map(i => this.state[type][i]))
         .enter()
         .append('text')
         .attr('text-anchor', 'middle')
@@ -180,7 +185,7 @@ class App extends Component {
         .attr('text-anchor', 'middle')
         .attr('x', '50%')
         .attr('y', '95%')
-        .html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 ' + languages[l].confirmed);
+        .html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, 0 ' + languages[l][type]);
     });
     setTimeout(() => {
       this.createInterval();
@@ -197,11 +202,11 @@ class App extends Component {
         this.setState((state, props) => ({
           total_cases:state.total_cases + d[this.state.dates[this.state.year_month_idx]]
         }));
-        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 5;
+        return Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * multiplier;
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * 5) + 'px';
+        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * multiplier) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
@@ -213,8 +218,8 @@ class App extends Component {
       });
   }
   getCountryColor(country) {
-    if (this.state.confirmed[country] !== undefined) {
-      if (this.state.confirmed[country][this.state.dates[this.state.year_month_idx]] > 0) {
+    if (this.state[type][country] !== undefined) {
+      if (this.state[type][country][this.state.dates[this.state.year_month_idx]] > 0) {
         return '#808080';
       }
       else {
@@ -265,7 +270,7 @@ class App extends Component {
         let datetime = this.state.dates[this.state.year_month_idx].split(' ');
         let date = datetime[0].split('/');
         let time = datetime[1];
-        this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' ' + languages[l].confirmed);
+        this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' ' + languages[l][type]);
       }
     }
     return (
