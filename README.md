@@ -56,12 +56,14 @@ More information about WHO situation reports can be accessed, [here](https://www
 * PTV/Armenia on 1TV
 * RAI/Italy on RAI 3
 * RTCG/Montenegro on TVCG Sat
+* RTE/Ireland on RTE 1
 * RTK/Kosovo on RTK 1
 * RTP/Portugal on RTPI
 * RTVS/Slovakia on Dvojka
 * RTVS/Slovakia on Jednotka
 * RTVS/Slovenia on TVS1 Slovenia
 * TRV/Romania on TVR 1
+* TVP/Poland on TVP Info
 * ZDF/Germany on 3SAT
 
 ## How to use
