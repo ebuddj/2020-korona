@@ -31,6 +31,7 @@ const countryCenters = {
   "Belarus": {"Lat":53.4250605, "Long":27.6971358},
   "Belgium": {"Lat":50.6402809, "Long":4.6667145},
   "Channel Islands": {"Lat":49.34659957885742, "Long":-2.362060546875},
+  "Isle of Man": {"Lat":54.2358167, "Long":-4.5145987},
   "Cyprus": {"Lat":34.9823018, "Long":33.1451285},
   "Croatia": {"Lat":45.5643442, "Long":17.0118954},
   "Czechia": {"Lat":49.8167003, "Long":15.4749544},
