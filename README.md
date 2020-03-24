@@ -23,7 +23,6 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9835d15e3209836e0f694a667f871ee6/2020_21010961), 2020-03-05
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9835d15e3209836e0f694a667f871ee6/2020_21011649), 2020-03-09
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/a34eb8c8262bb020bcd2dcfa6b48bed9/2020_21012113), 2020-03-11
-* [News Exchange](https://news-exchange.ebu.ch/item_detail/a34eb8c8262bb020bcd2dcfa6b48bed9/2020_21012113), 2020-03-11
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/6c445577676afd692a08a082e7f50310/2020_21012568), 2020-03-13
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/c3fbb7974093a1e5d2277bdc9bc9c606/2020_21013349), 2020-03-17
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/66c342f98c250656af2dbfff7fab9c7f/2020_21014318), 2020-03-23
@@ -52,6 +51,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * Euronews/French on Euronews French
 * Euronews/Germany on Euronews Germany
 * Euronews/Italy on Euronews Italy
+* HRT/Croatia no HTV1
 * ORF/Austria on ORF2 Bundesland
 * PTV/Armenia on 1TV
 * RAI/Italy on RAI 3
