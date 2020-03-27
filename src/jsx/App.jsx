@@ -98,7 +98,7 @@ function getHashValue(key) {
 const l = getHashValue('l') ? getHashValue('l') : 'en';
 const type = getHashValue('type') ? getHashValue('type') : 'confirmed';
 
-const multiplier = (type === 'confirmed') ? 5 : 9; 
+const multiplier = (type === 'confirmed') ? 5 : 8; 
 
 class App extends Component {
   constructor(props) {
