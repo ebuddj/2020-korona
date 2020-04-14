@@ -98,7 +98,7 @@ function getHashValue(key) {
 const l = getHashValue('l') ? getHashValue('l') : 'en';
 const type = getHashValue('type') ? getHashValue('type') : 'deaths';
 
-const multiplier = (type === 'confirmed') ? 5 : 6.5; 
+const multiplier = (type === 'confirmed') ? 5 : 6; 
 
 class App extends Component {
   constructor(props) {
@@ -207,7 +207,7 @@ class App extends Component {
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * multiplier) + 'px';
+        return (Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * (multiplier - 2)) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
