@@ -4,7 +4,9 @@
 
 ## Confirmed coronavirus cases in Europe countries (EBU)
 
-This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from January 22 until May 4 included. The circle radius is calculated with a logarithmic scale.
+This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from June 1 until December 7 included.
+
+The size of the circle reflects the number of Covid-19 related deaths per population in the past 14 days in the given country.
 
 The data has been sourced from the World Health Organisation and was compiled by the Johns Hopkins University Center for Systems Science and Engineering. See, [here](https://github.com/CSSEGISandData/COVID-19).
 
