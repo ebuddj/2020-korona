@@ -4,7 +4,7 @@
 
 ## Confirmed coronavirus cases in Europe countries (EBU)
 
-This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from June 1 until December 7 included.
+This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from June 1 until December 17 included.
 
 The size of the circle reflects the number of Covid-19 related deaths per population in the past 14 days in the given country.
 
