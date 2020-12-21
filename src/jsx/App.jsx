@@ -147,11 +147,11 @@ class App extends Component {
           total_cases:state.total_cases + parseInt(d[this.state.dates[this.state.year_month_idx]] / 14)
         }));
         // Math.log2(Math.sqrt(d[this.state.dates[this.state.year_month_idx]] / Math.PI) + 1) * multiplier;
-        return Math.max(Math.sqrt(parseInt(d[this.state.dates[this.state.year_month_idx]] / areaInfo[d.Province_State].population * 100000)) * 5, 0);
+        return Math.max(Math.sqrt(parseInt(d[this.state.dates[this.state.year_month_idx]] / areaInfo[d.Province_State].population * 100000)) * 6, 0);
       });
     g.selectAll('text')
       .style('font-size', (d, i) => {
-        return Math.max(Math.sqrt(parseInt(d[this.state.dates[this.state.year_month_idx]] / areaInfo[d.Province_State].population * 100000)) * 4, 0) + 'px';
+        return Math.max(Math.sqrt(parseInt(d[this.state.dates[this.state.year_month_idx]] / areaInfo[d.Province_State].population * 100000)) * 5, 0) + 'px';
       })
       .html((d, i) => {
         if (d[this.state.dates[this.state.year_month_idx]] > 0) {
