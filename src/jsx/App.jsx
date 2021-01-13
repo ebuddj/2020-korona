@@ -216,7 +216,7 @@ class App extends Component {
         let date = datetime[0].split('/');
         let time = datetime[1];
         // this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20, ' + this.state.total_cases + ' ' + languages[l][type]);
-        this.text.html('' + date[1] + '.' + date[0] + '.' + date[2] + '20');
+        this.text.html('' + date[1] + '.' + date[0] + '.20' + date[2]);
       }
     }
     return (
