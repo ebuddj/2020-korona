@@ -43,6 +43,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/37c47b9292c81603e848b9956dd2f5dd/2020_21021163), 2020-05-05
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/56f049b56c586595b5cdc5a063cad38e/2020_21055057), 2020-12-08
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/e09a5794debb97f2bc6204677ffc328c/2021_21001746), 2021-01-12
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/74611e3f763e7c8321feef8ce5412b40/2021_21004014), 2021-01-27
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/), 2020-02-09
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-show-spread-of-coronavirus-throughout-europe-animation/), 2020-02-19
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-shows-spread-of-coronavirus-throughout-europe-between-january-20-and-february-25-animation/), 2020-02-26
