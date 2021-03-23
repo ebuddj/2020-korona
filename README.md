@@ -2,25 +2,18 @@
 
 **Live demo** https://ebuddj.github.io/2020-corona/
 
-## Confirmed coronavirus cases in Europe countries (EBU)
+## Confirmed coronavirus cases/deaths in Europe countries (EBU)
 
-This map shows the number of confirmed cases of the novel coronavirus (COVID-19) in Europe from 1 February 2020 until 26 January 2021 included.
+This map shows the number of confirmed deaths of the novel coronavirus (COVID-19) in Europe.
 
-The size of the circle reflects the number of Covid-19 related deaths per population in the past 14 days in the given country.
+The size of the circle reflects the number of Covid-19 related deaths per population in the past 7 days in the given country.
 
-The data has been sourced from the World Health Organisation and was compiled by the Johns Hopkins University Center for Systems Science and Engineering. See, [here](https://github.com/CSSEGISandData/COVID-19).
-
-**Swedish version** 
-* https://ebuddj.github.io/2020-corona/#l=sv
+The data is sourced from Our World In Data.
 
 More information about WHO situation reports can be accessed, [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/).
 
 **Sources**
-* [THL](https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/wuhanin-koronavirus)
-* [WHO](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/)
-* [ECDC](https://www.ecdc.europa.eu/en/novel-coronavirus-china)
-* [JHU CCSE](https://github.com/CSSEGISandData/COVID-19)
-* [GPS Coordinates](https://www.gps-coordinates.net/)
+* [Our World In Data](https://ourworldindata.org/covid-deaths)
 
 **EBU links**
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/8c3fa449db25f73b3bb1c502d7ae8566/2020_21006664), 2020-02-10

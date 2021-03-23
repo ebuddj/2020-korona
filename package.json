@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "update-data": "cd python && python 2020-corona.py",
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "sync-gh-pages": "npm run build && git commit -am 'Production build' && git subtree push --prefix public origin gh-pages"
