@@ -5,9 +5,13 @@ body {
 }
 .plus___DWTpR {
   overflow: hidden;
-  max-width: 975px;
   position: relative;
+  display: table-cell;
+  font-size: 0;
+  height: 100vh;
   margin: auto auto;
+  vertical-align: middle;
+  width: 100vw;
   /* General styles */
 }
 .plus___DWTpR h3 {
@@ -34,7 +38,7 @@ body {
 .plus___DWTpR .slider_container___35Luy {
   box-sizing: border-box;
   margin: 20px auto auto auto;
-  position: absolute;
+  max-width: 975px;
   text-align: center;
   width: 100%;
 }
