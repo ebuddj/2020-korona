@@ -79,3 +79,28 @@ import json
 data = {'deaths':data}
 with open('../media/data/data.json', 'w') as outfile:
   json.dump(data, outfile)
+
+  
+# List of ERNO countries
+erno_countries = ['Albania','Bosnia and Herzegovina','Bulgaria','Croatia','Hungary','Kosovo','Montenegro','North Macedonia','Romania','Serbia','Slovenia']
+
+# Loop throught the ERNO countries and create data.
+data = {}
+df = df[df['date'] > '2020-12-24']
+for erno_country in erno_countries:
+  previous_value = 0
+  data[erno_country] = {'Province_State':erno_country}
+  for index, values in (df[df['location'] == erno_country]).iterrows():
+    if values.new_deaths_smoothed_per_million != 0:
+      previous_value = values.new_deaths_smoothed_per_million
+      data[erno_country][values.date] = values.new_deaths_smoothed_per_million
+    else:
+      data[erno_country][values.date] = previous_value
+
+# Export data.
+import json
+data = {'deaths':data}
+with open('../media/data/data_erno.json', 'w') as outfile:
+  json.dump(data, outfile)
+
+print ('All done!\n')

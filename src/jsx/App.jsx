@@ -28,9 +28,9 @@ const l = getHashValue('l') ? getHashValue('l') : 'en';
 const area = getHashValue('area') ? getHashValue('area') : '';
 const type = 'deaths';
 
-const projection = d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
-const data_file_name = 'data.json';
-const multiplier = 6;
+const projection = (area === 'erno') ? d3.geoAzimuthalEquidistant().center([25,46]).scale(3000) : d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
+const data_file_name = (area === 'erno') ? 'data_erno.json' : 'data.json';
+const multiplier = (area === 'erno') ? 12 : 6;
 
 class App extends Component {
   constructor(props) {
