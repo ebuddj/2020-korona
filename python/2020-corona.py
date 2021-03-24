@@ -86,7 +86,7 @@ erno_countries = ['Albania','Bosnia and Herzegovina','Bulgaria','Croatia','Hunga
 
 # Loop throught the ERNO countries and create data.
 data = {}
-df = df[df['date'] > '2020-12-24']
+df = df[df['date'] >= '2020-02-01']
 for erno_country in erno_countries:
   previous_value = 0
   data[erno_country] = {'Province_State':erno_country}
