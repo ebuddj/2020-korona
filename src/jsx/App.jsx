@@ -80,6 +80,11 @@ class App extends Component {
           return this.getAreaColor(d.properties.NAME);
         });
 
+      g.append('path').datum({type:'Polygon',properties:{'NAME':'Kosovo'},coordinates:constants.kosovo})
+        .attr('d', path)
+        .attr('fill', '#f5f5f5')
+        .attr('class', style.kosovo)
+
       let data = Object.keys(this.state.data).map(i => this.state.data[i]);
 
       g.selectAll('circle').data(data)
