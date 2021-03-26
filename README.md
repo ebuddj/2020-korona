@@ -14,6 +14,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 
 **Sources**
 * [Our World In Data](https://ourworldindata.org/covid-deaths)
+* [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 
 **EBU links**
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/8c3fa449db25f73b3bb1c502d7ae8566/2020_21006664), 2020-02-10
