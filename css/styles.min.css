@@ -54,6 +54,13 @@ body {
   stroke: #999;
   transition: fill 0.2s linear;
 }
+.plus___DWTpR .map_container___22zRx svg .kosovo___1TWRI {
+  stroke-dasharray: 3,3;
+  stroke-width: 0.5px;
+  z-index: 99;
+  stroke: #999;
+  transition: fill 0.2s linear;
+}
 .plus___DWTpR .map_container___22zRx svg .number___3PPZu,
 .plus___DWTpR .map_container___22zRx svg .circle___3snTo {
   transition: all 0.5s linear;
