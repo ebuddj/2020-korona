@@ -38,6 +38,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/56f049b56c586595b5cdc5a063cad38e/2020_21055057), 2020-12-08
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/e09a5794debb97f2bc6204677ffc328c/2021_21001746), 2021-01-12
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/74611e3f763e7c8321feef8ce5412b40/2021_21004014), 2021-01-27
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/a748d77a68e4b4d86551810b32a04eb0/2021_10005090), 2021-03-26 ERNO region
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-illustrates-spread-of-coronavirus-in-europe-animation/), 2020-02-09
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-show-spread-of-coronavirus-throughout-europe-animation/), 2020-02-19
 * [Social Newswire](https://www.evnsocialnewswire.ch/europe/coronavirus-animation-shows-spread-of-coronavirus-throughout-europe-between-january-20-and-february-25-animation/), 2020-02-26
@@ -56,7 +57,7 @@ More information about WHO situation reports can be accessed, [here](https://www
 * Euronews/French on Euronews French
 * Euronews/Germany on Euronews Germany
 * Euronews/Italy on Euronews Italy
-* HRT/Croatia no HTV1
+* HRT/Croatia on HTV1
 * ORF/Austria on ORF2 Bundesland
 * PTV/Armenia on 1TV
 * RAI/Italy on RAI 3
