@@ -2,7 +2,7 @@
 
 **Live demo** https://ebuddj.github.io/2020-corona/
 
-## Confirmed coronavirus cases/deaths in Europe countries (EBU)
+## Confirmed coronavirus deaths in Europe countries (EBU)
 
 This map shows the number of confirmed deaths of the novel coronavirus (COVID-19) in Europe.
 
