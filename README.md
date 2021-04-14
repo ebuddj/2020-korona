@@ -12,6 +12,10 @@ The data is sourced from Our World In Data.
 
 More information about WHO situation reports can be accessed, [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/).
 
+See also the corresponding project for confirmed cases: https://ebuddj.github.io/2021-covid19cases
+
+Ps. This project has shown different data sets in the past.
+
 **Sources**
 * [Our World In Data](https://ourworldindata.org/covid-deaths)
 * [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
