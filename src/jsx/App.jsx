@@ -122,7 +122,7 @@ class App extends Component {
         .attr('x', '50%')
         .attr('y', '7%');
         let date = this.state.dates[this.state.year_month_idx].split('-');
-        this.text.html('' + date[2] + '.' + date[1] + '.' + date[0]);
+        this.text.html('Covid-19 deaths: ' + date[2] + '.' + date[1] + '.' + date[0]);
     });
     setTimeout(() => {
       this.createInterval();
@@ -203,7 +203,7 @@ class App extends Component {
     if (this.text) {
       if (this.state.dates[this.state.year_month_idx]) {
         let date = this.state.dates[this.state.year_month_idx].split('-');
-        this.text.html('' + date[2] + '.' + date[1] + '.' + date[0]);
+        this.text.html('Covid-19 deaths: ' + date[2] + '.' + date[1] + '.' + date[0]);
       }
     }
     return (
