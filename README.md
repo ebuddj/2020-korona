@@ -69,6 +69,8 @@ Ps. This project has shown different data sets in the past.
 * RTE/Ireland on RTE 1
 * RTK/Kosovo on RTK 1
 * RTP/Portugal on RTPI
+* RTVE/Spain on TVE International
+* RTVE/Spain on TVE La 1
 * RTVS/Slovakia on Dvojka
 * RTVS/Slovakia on Jednotka
 * RTVS/Slovenia on TVS1 Slovenia
